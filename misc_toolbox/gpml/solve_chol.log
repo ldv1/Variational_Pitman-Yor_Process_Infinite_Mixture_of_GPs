@@ -1,0 +1,227 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=mex 2010.9.8)  21 FEB 2011 13:15
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**solve_chol.c
+(./solve_chol.c
+This is MeX  Version 1.05  18 XII 1993  (B. Jackowski & M. Ry\'cko)
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.1 /* solve_
+             chol - solve a linear system A*X = B using the cholesky factori...
+
+? 
+! Interruption.
+<to be read again> 
+                   _
+l.1 /* solve_
+             chol - solve a linear system A*X = B using the cholesky factori...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.3 
+    
+? 
+
+Overfull \hbox (116.06862pt too wide) in paragraph at lines 1--3
+[]\tenrm /* solve$[]\teni hol \tensy ^^@ \teni solvealinearsystemA \tensy ^^C \
+teni X \tenrm = \teni BusingthecholeskyfactorizationofA\tenrm (\teni whereAissq
+uare; symmetricandpositivedefinite:$ |
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm /
+.\tenrm *
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.\tenrm s
+.etc.
+
+! You can't use `macro parameter character #' in vertical mode.
+l.6 #
+     include "mex.h"
+? 
+! You can't use `macro parameter character #' in horizontal mode.
+l.7 #
+     include <math.h>
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.9 extern int dpotrs_
+                      (char *, int *, int *, double *, int *, double *, int ...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.10 
+     
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.17     mexErrMsgTxt("Usage: X = solve_
+                                        chol(R, B)");
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.24 
+     
+? 
+
+Overfull \hbox (58.27313pt too wide) in paragraph at lines 16--24
+\teni mxGetN\tenrm (\teni prhs\tenrm [0]); \teni if\tenrm (\teni n\tenrm ! = \t
+eni mxGetM\tenrm (\teni prhs\tenrm [0]))\teni mexErrMsgTxt\tenrm ("\teni Error 
+\tenrm : \teni Firstargumentmatrixmustbesquare\tenrm "); \teni if\tenrm (\teni 
+n\tenrm ! =|
+
+\hbox(7.5+2.5)x469.75499
+.\teni m
+.\teni x
+.\teni G
+.\teni e
+.\teni t
+.etc.
+
+
+Overfull \hbox (53.14568pt too wide) in paragraph at lines 16--24
+\teni mxGetM\tenrm (\teni prhs\tenrm [1]))\teni mexErrMsgTxt\tenrm ("\teni Erro
+r \tenrm : \teni Firstandsecondargumentmatricesmusthavesamenumberofrows\tenrm "
+); \teni m \tenrm =|
+
+\hbox(7.5+2.5)x469.75499
+.\teni m
+.\teni x
+.\teni G
+.\teni e
+.\teni t
+.etc.
+
+
+Overfull \hbox (3.23096pt too wide) in paragraph at lines 25--27
+[]\tenrm plhs[0] = mxCre-ate-Do-uble-Ma-trix(n, m, mxREAL); /* al-lo-cate space
+ for out-put */ C = mxGetPr(plhs[0]); |
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm p
+.\tenrm l
+.\tenrm h
+.\tenrm s
+.etc.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.30     dpotrs_
+                ("U", &n, &m, mxGetPr(prhs[0]), &n, C, &n, &q);   /* solve s...
+
+? 
+! Misplaced alignment tab character &.
+l.30     dpotrs_("U", &
+                       n, &m, mxGetPr(prhs[0]), &n, C, &n, &q);   /* solve s...
+
+? 
+! Misplaced alignment tab character &.
+l.30     dpotrs_("U", &n, &
+                           m, mxGetPr(prhs[0]), &n, C, &n, &q);   /* solve s...
+
+? 
+! Misplaced alignment tab character &.
+l.30     dpotrs_("U", &n, &m, mxGetPr(prhs[0]), &
+                                                 n, C, &n, &q);   /* solve s...
+
+? 
+! Misplaced alignment tab character &.
+l.30 ...s_("U", &n, &m, mxGetPr(prhs[0]), &n, C, &
+                                                  n, &q);   /* solve system */
+? 
+! Misplaced alignment tab character &.
+l.30 ...U", &n, &m, mxGetPr(prhs[0]), &n, C, &n, &
+                                                  q);   /* solve system */
+? 
+! Extra }, or forgotten $.
+l.33 }
+      
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.34 
+     
+? 
+
+Overfull \hbox (55.53775pt too wide) in paragraph at lines 28--34
+[]\tenrm if (n==0) re-turn; /* if ar-gu-ment was empty ma-trix, do no more */ m
+emcpy(C,mxGetPr(prhs[1]),n*m*sizeof(double));|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm i
+.\tenrm f
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.\tenrm (
+.etc.
+
+
+Overfull \hbox (91.92403pt too wide) in paragraph at lines 28--34
+\tenrm /* copy ar-gu-ment ma-trix */ dpotrs$[]"\teni U\tenrm "\teni ; n; m; mxG
+etPr\tenrm (\teni prhs\tenrm [0])\teni ; n; C; n; q\tenrm ); \teni = \tensy ^^C
+ \teni solvesystem \tensy ^^C \teni =if\tenrm (\teni q > \tenrm 0)\teni mexErrM
+sgTxt\tenrm ("\teni Error \tenrm :|
+
+\hbox(7.5+3.55557)x469.75499, glue set - 1.0
+.\tenrm /
+.\tenrm *
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.\tenrm c
+.\tenrm o
+.etc.
+
+! Interruption.
+l.13394835 
+           
+? ^^H^^H^^H^^H^^H^^H^^H^^H^^H^^H^^H^^H^^H^^H^^H^^H^^H^^H^^H^^H^^H^^H
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? 
+! Interruption.
+l.55554305 
+           
+? 
+! Interruption.
+l.71176772 
+           
+? 
+! Interruption.
+l.167972876 
+            
+? ^^H^^H^^H^^H
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? e
+No pages of output.

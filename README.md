@@ -10,7 +10,7 @@ Some useful tricks are borrowed from Titsias and Lazaro-Gredilla in [Spike and S
 The model is created, initialized and trained in `imgpTrain`.
 Without proper initialization, variational methods can be easily trapped into local optima. So it pays off to initialize the model in a sensible way to overcome this issue. Various initialization strategies are implemented.
 
-The lower bound is computed in `imgpLowerBound'.
+The lower bound is computed in `imgpLowerBound`.
 
 Prediction of the mean and variance at unseen inputs is done in `imgpPredict`.
 
